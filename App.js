@@ -1,19 +1,22 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import {View,Text} from 'react-native';
 import Start from './comps/Start'
+import End from './comps/End';
+import About from './comps/About';
+import Contact from './comps/contact';
+import styles from './styles/AppStyles';
 
 function App(){
-  return (
-    <Start/>
-  )
+	// UI
+	return (
+		<View style={styles.app}>
+			<Text>Hello</Text>
+            <Start/>
+            <About />
+            <Contact />
+			<End/>
+		</View>
+	)
 }
-
 
 export default App;

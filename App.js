@@ -1,14 +1,6 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React from 'react';
 import {View,Text} from 'react-native';
-
+import Start from './comps/Start'
 import End from './comps/End';
 import About from './comps/About';
 import Contact from './comps/contact';
@@ -19,6 +11,7 @@ function App(){
 	return (
 		<View style={styles.app}>
 			<Text>Hello</Text>
+            <Start/>
             <About />
             <Contact />
 			<End/>

@@ -7,24 +7,23 @@
  */
 
 import React from 'react';
-import {
-  View,
-  Text,
-  Image
-} from 'react-native';
+import {View,Text} from 'react-native';
+
+import End from './comps/End';
 import About from './comps/About';
+import Contact from './comps/contact';
 import styles from './styles/AppStyles';
 
-function App() {
-
-  return (
-    <View style={styles.app}>
-      <Text></Text>
-      <About />
-    </View>
-  )
-
-};
-
+function App(){
+	// UI
+	return (
+		<View style={styles.app}>
+			<Text>Hello</Text>
+            <About />
+            <Contact />
+			<End/>
+		</View>
+	)
+}
 
 export default App;
